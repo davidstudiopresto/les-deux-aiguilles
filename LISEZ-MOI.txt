@@ -1,0 +1,28 @@
+LES DEUX AIGUILLES — SITE DÉMO
+================================
+
+Pour voir le site :
+-------------------
+Double-cliquez sur "index.html" — il s'ouvrira dans votre navigateur.
+
+Fichiers du projet :
+--------------------
+- index.html     → Contenu du site (textes, structure)
+- styles.css     → Mise en page et couleurs
+- script.js      → Petites animations
+- images/        → Dossier prévu pour vos photos
+
+Pour remplacer les images de la galerie par vos vraies photos :
+----------------------------------------------------------------
+1. Placez vos photos dans le dossier "images/"
+2. Dans "index.html", remplacez les blocs <div class="gallery-placeholder ...">
+   par des balises <img src="images/votre-photo.jpg" alt="description">
+
+Informations déjà intégrées :
+------------------------------
+- Adresse : 20 rue d'Alsace, 88100 Saint-Dié-des-Vosges
+- Téléphone : 07 59 66 96 91
+- Email : lesdeuxaiguilles@gmail.com
+
+Il s'agit d'une démo — le formulaire de contact n'envoie pas encore d'email,
+il devra être connecté à un service d'envoi (EmailJS, Formspree, ou serveur).
