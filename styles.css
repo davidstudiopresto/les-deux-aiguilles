@@ -144,6 +144,32 @@ em {
     width: 100%;
 }
 
+.nav-socials {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding-left: 1.25rem;
+    margin-left: 0.5rem;
+    border-left: 1px solid var(--line);
+}
+
+.nav-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+    transition: color 0.2s, transform 0.2s;
+}
+
+.nav-social-link:hover {
+    color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.nav-social-link::after {
+    display: none !important;
+}
+
 .menu-toggle {
     display: none;
     background: none;
