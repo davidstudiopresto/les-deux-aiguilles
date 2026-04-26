@@ -1,233 +1,344 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Deux Aiguilles — Tatouage & Piercing à Saint-Dié</title>
-    <meta name="description" content="Salon de tatouage et piercing à Saint-Dié-des-Vosges. Créations uniques, hygiène irréprochable.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les Deux Aiguilles — Atelier d'encre · Saint-Dié-des-Vosges</title>
+<meta name="description" content="Atelier de tatouage & piercing à Saint-Dié-des-Vosges. Lignes fines, créations sur mesure, gestes maîtrisés.">
+<meta name="author" content="Les Deux Aiguilles">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Les Deux Aiguilles — Atelier d'encre · Saint-Dié-des-Vosges">
+<meta property="og:description" content="Tatouage & piercing à Saint-Dié-des-Vosges. Lignes fines, créations sur mesure.">
+<meta property="og:image" content="images/photo-1.webp">
+<meta property="og:url" content="https://davidstudiopresto.github.io/les-deux-aiguilles/">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon : deux aiguilles croisées -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23a01818' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M5 19 L19 5'/%3E%3Cpath d='M19 19 L5 5'/%3E%3Ccircle cx='5' cy='5' r='1.2' fill='%23a01818' stroke='none'/%3E%3Ccircle cx='19' cy='5' r='1.2' fill='%23a01818' stroke='none'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=DM+Serif+Display:ital@0;1&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=v2">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TattooParlor",
+    "name": "Les Deux Aiguilles",
+    "image": "images/photo-1.webp",
+    "url": "https://davidstudiopresto.github.io/les-deux-aiguilles/",
+    "telephone": "+33759669691",
+    "email": "lesdeuxaiguilles@gmail.com",
+    "address": { "@type": "PostalAddress", "streetAddress": "20 rue d'Alsace", "addressLocality": "Saint-Dié-des-Vosges", "postalCode": "88100", "addressCountry": "FR" },
+    "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "10:30", "closes": "19:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "17:00" }
+    ]
+}
+</script>
 </head>
 <body>
 
-    <div class="bg-pattern"></div>
+<!-- Texture grain papier -->
+<div class="grain" aria-hidden="true"></div>
 
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <span class="logo-mark">✦</span>
-                <span class="logo-text">Les Deux Aiguilles</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#prestations">Prestations</a></li>
-                <li><a href="#galerie">Galerie</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-socials">
-                <a href="https://maps.google.com/?q=20+rue+d'Alsace+88100+Saint-Dié-des-Vosges" target="_blank" rel="noopener" aria-label="Localisation" class="nav-social-link" title="20 rue d'Alsace, Saint-Dié">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                        <circle cx="12" cy="10" r="3"/>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/lesdeuxaiguilles/" target="_blank" rel="noopener" aria-label="Instagram" class="nav-social-link">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
-                        <rect x="3" y="3" width="18" height="18" rx="5" ry="5"/>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                    </svg>
-                </a>
-                <a href="https://www.facebook.com/p/lesdeuxaiguilles-100090045909117/" target="_blank" rel="noopener" aria-label="Facebook" class="nav-social-link">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                    </svg>
-                </a>
-            </div>
-            <button class="menu-toggle" aria-label="Menu">☰</button>
-        </nav>
-    </header>
+<!-- Marquee bandeau supérieur -->
+<div class="marquee">
+    <div class="marquee-track">
+        <span>Tatouage</span><em>※</em>
+        <span>Piercing</span><em>※</em>
+        <span>Sur rendez-vous</span><em>※</em>
+        <span>20 rue d'Alsace · Saint-Dié</span><em>※</em>
+        <span>Atelier depuis 2023</span><em>※</em>
+        <span>Tatouage</span><em>※</em>
+        <span>Piercing</span><em>※</em>
+        <span>Sur rendez-vous</span><em>※</em>
+        <span>20 rue d'Alsace · Saint-Dié</span><em>※</em>
+        <span>Atelier depuis 2023</span><em>※</em>
+    </div>
+</div>
 
-    <section class="hero" id="accueil">
-        <div class="hero-content">
-            <p class="hero-eyebrow">Salon de Tatouage & Piercing</p>
-            <h1 class="hero-title">Les Deux<br><em>Aiguilles</em></h1>
-            <p class="hero-subtitle">L'art de la ligne fine, à Saint-Dié-des-Vosges.</p>
+<!-- Masthead (en-tête typographique journal) -->
+<header class="masthead">
+    <nav class="nav" aria-label="Navigation principale">
+        <div class="nav-left">
+            <a href="#atelier">Atelier</a>
+            <a href="#prestations">Prestations</a>
+            <a href="#flash">Flash</a>
+        </div>
+        <a href="#accueil" class="brand" aria-label="Les Deux Aiguilles">
+            <svg class="brand-mark" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+                <path d="M14 46 L46 14"/>
+                <path d="M46 46 L14 14"/>
+                <circle cx="14" cy="14" r="2.4" fill="currentColor"/>
+                <circle cx="46" cy="14" r="2.4" fill="currentColor"/>
+                <path d="M11 11 L17 17 M43 11 L49 17"/>
+            </svg>
+            <span class="brand-words">
+                <span class="brand-line">Les Deux</span>
+                <span class="brand-script">Aiguilles</span>
+            </span>
+        </a>
+        <div class="nav-right">
+            <a href="#contact">Rendez-vous</a>
+            <a href="https://www.instagram.com/lesdeuxaiguilles/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com/p/lesdeuxaiguilles-100090045909117/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')">
+            <span></span><span></span>
+        </button>
+    </nav>
+    <div class="masthead-rule"></div>
+    <div class="masthead-meta">
+        <span>N° 88 · Saint-Dié</span>
+        <span class="dot">✕</span>
+        <span>Tatouage &amp; Piercing</span>
+        <span class="dot">✕</span>
+        <span>Atelier d'encre</span>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="accueil">
+    <div class="hero-grid">
+        <div class="hero-text">
+            <div class="hero-eyebrow">
+                <span class="dash"></span>
+                Atelier d'encre, depuis 2023
+            </div>
+            <h1 class="hero-title">
+                <span class="title-row">Les Deux</span>
+                <span class="title-row title-row--script"><em>Aiguilles</em></span>
+                <span class="title-row title-row--small">Saint-Dié-des-Vosges</span>
+            </h1>
             <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary">Prendre rendez-vous</a>
-                <a href="#galerie" class="btn btn-ghost">Voir la galerie</a>
+                <a href="#contact" class="link-arrow">
+                    <span>Prendre rendez-vous</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#flash" class="link-quiet">Voir le flash</a>
             </div>
         </div>
-        <div class="hero-scroll">
-            <span>Découvrir</span>
-            <div class="scroll-line"></div>
+
+        <figure class="hero-fig">
+            <div class="fig-frame">
+                <img src="images/photo-1.webp" alt="Réalisation Les Deux Aiguilles">
+                <span class="fig-label">PL. I · Pièce signature</span>
+            </div>
+            <svg class="hero-orn" viewBox="0 0 80 120" fill="none" stroke="currentColor" stroke-width="0.9" aria-hidden="true">
+                <path d="M40 8 L40 112" stroke-linecap="round"/>
+                <path d="M40 24 L28 16 M40 24 L52 16"/>
+                <path d="M40 50 L24 42 M40 50 L56 42"/>
+                <path d="M40 76 L20 70 M40 76 L60 70"/>
+                <circle cx="40" cy="92" r="3" fill="currentColor"/>
+                <path d="M30 105 L40 100 L50 105"/>
+            </svg>
+        </figure>
+    </div>
+
+    <div class="hero-foot">
+        <span class="hf-mini">07 59 66 96 91</span>
+        <span class="hf-mini">20 rue d'Alsace</span>
+        <span class="hf-mini">@lesdeuxaiguilles</span>
+    </div>
+</section>
+
+<!-- N° I — Atelier -->
+<section class="chapter chapter-about" id="atelier">
+    <div class="chapter-mark">N° I</div>
+    <div class="chapter-grid">
+        <figure class="about-portrait">
+            <img src="images/photo-3.webp" alt="L'atelier Les Deux Aiguilles">
+            <span class="portrait-tag">L'atelier · Saint-Dié</span>
+        </figure>
+        <div class="about-body">
+            <p class="kicker">L'Atelier</p>
+            <h2 class="chapter-title">Deux mains,<br><em>une seule</em><br>signature.</h2>
+            <blockquote class="pull-quote">
+                Aux <em>Deux Aiguilles</em>, chaque pièce naît d'une rencontre, d'un dessin patiemment retravaillé et d'un geste maîtrisé. Tatouages fine line, floral, géométrique, lettrage — chaque projet est unique, pensé sur mesure pour votre peau.
+            </blockquote>
+            <ul class="house-rules">
+                <li><span class="hr-no">i.</span><span>Matériel stérile à usage unique</span></li>
+                <li><span class="hr-no">ii.</span><span>Devis et dessin sur mesure avant la séance</span></li>
+                <li><span class="hr-no">iii.</span><span>Suivi de cicatrisation</span></li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="eyebrow">Le salon</p>
-                    <h2>Un lieu dédié à l'art du tatouage</h2>
-                    <p>Bienvenue aux <em>Deux Aiguilles</em>, studio de tatouage et piercing situé au cœur de Saint-Dié-des-Vosges. Nous mettons notre passion et notre savoir-faire au service de vos projets, des plus discrets aux plus audacieux.</p>
-                    <p>Chaque création est unique, pensée et dessinée sur mesure, dans le respect de vos envies et de votre peau.</p>
-                </div>
-                <div class="about-values">
-                    <div class="value-item">
-                        <span class="value-number">01</span>
-                        <h3>Hygiène</h3>
-                        <p>Matériel stérile à usage unique, normes strictes respectées.</p>
-                    </div>
-                    <div class="value-item">
-                        <span class="value-number">02</span>
-                        <h3>Création</h3>
-                        <p>Des projets personnalisés, dessinés selon vos idées.</p>
-                    </div>
-                    <div class="value-item">
-                        <span class="value-number">03</span>
-                        <h3>Écoute</h3>
-                        <p>Un accompagnement bienveillant, du premier échange à la cicatrisation.</p>
-                    </div>
-                </div>
+<!-- N° II — Prestations -->
+<section class="chapter chapter-services" id="prestations">
+    <div class="chapter-mark">N° II</div>
+    <div class="chapter-head chapter-head--quiet">
+        <h2 class="chapter-title"><em>Prestations</em></h2>
+    </div>
+    <ul class="services-rows">
+        <li class="service-row reveal">
+            <span class="sr-no">01</span>
+            <span class="sr-name">Tatouage</span>
+            <span class="sr-meta">Fine line · floral · géométrique</span>
+            <a href="#contact" class="sr-link">Devis →</a>
+        </li>
+        <li class="service-row reveal">
+            <span class="sr-no">02</span>
+            <span class="sr-name">Piercing</span>
+            <span class="sr-meta">Oreilles · visage · corps</span>
+            <a href="#contact" class="sr-link">Sur RDV →</a>
+        </li>
+        <li class="service-row reveal">
+            <span class="sr-no">03</span>
+            <span class="sr-name">Lettrage</span>
+            <span class="sr-meta">Mots · phrases · prénoms</span>
+            <a href="#contact" class="sr-link">Devis →</a>
+        </li>
+        <li class="service-row reveal">
+            <span class="sr-no">04</span>
+            <span class="sr-name">Recouvrement &amp; retouches</span>
+            <span class="sr-meta">Cover-up · finitions</span>
+            <a href="#contact" class="sr-link">Étude →</a>
+        </li>
+    </ul>
+</section>
+
+<!-- N° III — Flash / Galerie -->
+<section class="chapter chapter-flash" id="flash">
+    <div class="chapter-mark">N° III</div>
+    <div class="chapter-head chapter-head--quiet">
+        <p class="kicker">Planches récentes</p>
+        <h2 class="chapter-title"><em>Flash</em> &amp; réalisations</h2>
+    </div>
+    <div class="flash-grid">
+        <figure class="flash-plate" data-plate="I"><img src="images/photo-1.webp" alt="PL. I" loading="lazy"></figure>
+        <figure class="flash-plate" data-plate="II"><img src="images/photo-2.webp" alt="PL. II" loading="lazy"></figure>
+        <figure class="flash-plate" data-plate="III"><img src="images/photo-3.webp" alt="PL. III" loading="lazy"></figure>
+        <figure class="flash-plate" data-plate="IV"><img src="images/photo-4.webp" alt="PL. IV" loading="lazy"></figure>
+        <figure class="flash-plate" data-plate="V"><img src="images/photo-5.webp" alt="PL. V" loading="lazy"></figure>
+        <figure class="flash-plate" data-plate="VI"><img src="images/photo-6.webp" alt="PL. VI" loading="lazy"></figure>
+        <figure class="flash-plate" data-plate="VII"><img src="images/photo-7.webp" alt="PL. VII" loading="lazy"></figure>
+        <figure class="flash-plate" data-plate="VIII"><img src="images/photo-8.webp" alt="PL. VIII" loading="lazy"></figure>
+        <figure class="flash-plate" data-plate="IX"><img src="images/photo-9.webp" alt="PL. IX" loading="lazy"></figure>
+        <figure class="flash-plate" data-plate="X"><img src="images/photo-10.webp" alt="PL. X" loading="lazy"></figure>
+        <figure class="flash-plate" data-plate="XI"><img src="images/photo-11.jpg" alt="PL. XI" loading="lazy"></figure>
+    </div>
+    <p class="flash-note">L'intégralité du flash est sur <a href="https://www.instagram.com/lesdeuxaiguilles/" target="_blank" rel="noopener">Instagram</a> &amp; <a href="https://www.facebook.com/p/lesdeuxaiguilles-100090045909117/" target="_blank" rel="noopener">Facebook</a>.</p>
+</section>
+
+<!-- N° IV — Contact -->
+<section class="chapter chapter-contact" id="contact">
+    <div class="chapter-mark">N° IV</div>
+    <div class="chapter-head chapter-head--quiet">
+        <h2 class="chapter-title"><em>Rendez-vous</em></h2>
+    </div>
+
+    <div class="contact-grid">
+        <form class="form" onsubmit="return submitForm(event)">
+            <div class="form-row">
+                <label><span>Nom</span><input type="text" name="nom" required></label>
+                <label><span>Email ou téléphone</span><input type="text" name="contact" required></label>
             </div>
+            <div class="form-row">
+                <label><span>Type de projet</span>
+                    <select name="type">
+                        <option>Tatouage</option>
+                        <option>Piercing</option>
+                        <option>Lettrage</option>
+                        <option>Recouvrement / retouches</option>
+                        <option>Autre</option>
+                    </select>
+                </label>
+                <label><span>Emplacement souhaité</span><input type="text" name="emplacement" placeholder="bras, cheville…"></label>
+            </div>
+            <label><span>Description du projet</span><textarea name="message" rows="5" placeholder="Idée, taille, références, disponibilités…" required></textarea></label>
+            <button type="submit" class="btn-line">Envoyer ma demande →</button>
+        </form>
+
+        <aside class="atelier-card">
+            <h3>L'Atelier</h3>
+            <dl>
+                <dt>Adresse</dt>
+                <dd>20 rue d'Alsace<br>88100 Saint-Dié-des-Vosges</dd>
+                <dt>Téléphone</dt>
+                <dd><a href="tel:+33759669691">07 59 66 96 91</a></dd>
+                <dt>Email</dt>
+                <dd><a href="mailto:lesdeuxaiguilles@gmail.com">lesdeuxaiguilles@gmail.com</a></dd>
+                <dt>Horaires</dt>
+                <dd>Mardi → Jeudi · 10h30 → 19h<br>Vendredi · 10h → 17h<br><span class="muted">Sur rendez-vous</span></dd>
+                <dt>Suivre</dt>
+                <dd>
+                    <a href="https://www.instagram.com/lesdeuxaiguilles/" target="_blank" rel="noopener">Instagram</a>
+                    ·
+                    <a href="https://www.facebook.com/p/lesdeuxaiguilles-100090045909117/" target="_blank" rel="noopener">Facebook</a>
+                </dd>
+            </dl>
+            <div class="atelier-map">
+                <iframe src="https://www.google.com/maps?q=20+rue+d'Alsace+88100+Saint-Dié-des-Vosges&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<!-- Colophon -->
+<footer class="colophon">
+    <div class="colophon-min">
+        <div class="colophon-logo">
+            <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" class="cl-mark">
+                <path d="M14 46 L46 14"/><path d="M46 46 L14 14"/>
+                <circle cx="14" cy="14" r="2.4" fill="currentColor"/>
+                <circle cx="46" cy="14" r="2.4" fill="currentColor"/>
+            </svg>
+            <span class="cl-line">Les Deux</span>
+            <span class="cl-script">Aiguilles</span>
         </div>
-    </section>
-
-    <section class="services" id="prestations">
-        <div class="container">
-            <div class="section-header">
-                <p class="eyebrow">Prestations</p>
-                <h2>Ce que nous proposons</h2>
-            </div>
-            <div class="services-grid services-grid--two">
-                <article class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1">
-                            <path d="M15 45 L45 15 M40 10 L50 20 L45 25"/>
-                            <circle cx="18" cy="42" r="2"/>
-                        </svg>
-                    </div>
-                    <h3>Tattoo</h3>
-                    <p>Tatouages sur mesure : fine line, floral, géométrique, réaliste — chaque pièce dessinée selon votre projet.</p>
-                </article>
-                <article class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1">
-                            <path d="M30 12 L36 28 L52 30 L40 41 L44 56 L30 48 L16 56 L20 41 L8 30 L24 28 Z"/>
-                        </svg>
-                    </div>
-                    <h3>Body Piercing</h3>
-                    <p>Oreilles, visage, corps — large gamme de bijoux et accompagnement personnalisé pour la cicatrisation.</p>
-                </article>
-            </div>
+        <div class="colophon-meta">
+            <a href="tel:+33759669691">07 59 66 96 91</a>
+            <span>·</span>
+            <a href="mailto:lesdeuxaiguilles@gmail.com">Email</a>
+            <span>·</span>
+            <a href="https://www.instagram.com/lesdeuxaiguilles/" target="_blank" rel="noopener">Instagram</a>
+            <span>·</span>
+            <a href="https://www.facebook.com/p/lesdeuxaiguilles-100090045909117/" target="_blank" rel="noopener">Facebook</a>
         </div>
-    </section>
+    </div>
+    <div class="colophon-bottom">
+        <span>© MMXXVI · 20 rue d'Alsace · Saint-Dié-des-Vosges</span>
+    </div>
+</footer>
 
-    <section class="gallery" id="galerie">
-        <div class="container">
-            <div class="section-header">
-                <p class="eyebrow">Galerie</p>
-                <h2>Réalisations récentes</h2>
-            </div>
-            <div class="gallery-grid">
-                <a href="images/photo-1.webp" class="gallery-item"><img src="images/photo-1.webp" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-                <a href="images/photo-2.webp" class="gallery-item"><img src="images/photo-2.webp" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-                <a href="images/photo-3.webp" class="gallery-item"><img src="images/photo-3.webp" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-                <a href="images/photo-4.webp" class="gallery-item"><img src="images/photo-4.webp" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-                <a href="images/photo-5.webp" class="gallery-item"><img src="images/photo-5.webp" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-                <a href="images/photo-6.webp" class="gallery-item"><img src="images/photo-6.webp" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-                <a href="images/photo-7.webp" class="gallery-item"><img src="images/photo-7.webp" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-                <a href="images/photo-8.webp" class="gallery-item"><img src="images/photo-8.webp" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-                <a href="images/photo-9.webp" class="gallery-item"><img src="images/photo-9.webp" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-                <a href="images/photo-10.webp" class="gallery-item"><img src="images/photo-10.webp" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-                <a href="images/photo-11.jpg" class="gallery-item"><img src="images/photo-11.jpg" alt="Réalisation Les Deux Aiguilles" loading="lazy"></a>
-            </div>
-            <p class="gallery-note">Retrouvez toutes nos créations sur <a href="https://www.instagram.com/lesdeuxaiguilles/" target="_blank" rel="noopener">Instagram</a> et <a href="https://www.facebook.com/p/lesdeuxaiguilles-100090045909117/" target="_blank" rel="noopener">Facebook</a>.</p>
-        </div>
-    </section>
+<!-- Floating socials -->
+<div class="social-floats">
+    <a href="https://www.facebook.com/p/lesdeuxaiguilles-100090045909117/" target="_blank" rel="noopener" class="float-btn float-btn--fb" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/lesdeuxaiguilles/" target="_blank" rel="noopener" class="float-btn float-btn--insta" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+        </svg>
+    </a>
+    <a href="tel:+33759669691" class="float-btn float-btn--phone" aria-label="Téléphone">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+    </a>
+</div>
 
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <p class="eyebrow">Contact</p>
-                    <h2>Venez nous rencontrer</h2>
-                    <p class="contact-intro">Pour un devis, un rendez-vous ou simplement discuter de votre projet, n'hésitez pas à nous contacter.</p>
+<!-- Lightbox -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lb-close" aria-label="Fermer" id="lb-close">×</button>
+    <button class="lb-arrow lb-prev" aria-label="Précédent" id="lb-prev">‹</button>
+    <button class="lb-arrow lb-next" aria-label="Suivant" id="lb-next">›</button>
+    <img id="lb-img" alt="" src="">
+    <div class="lb-cap" id="lb-cap"></div>
+</div>
 
-                    <div class="contact-item">
-                        <span class="contact-label">Adresse</span>
-                        <p>20 rue d'Alsace<br>88100 Saint-Dié-des-Vosges</p>
-                    </div>
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
-                    <div class="contact-item">
-                        <span class="contact-label">Téléphone</span>
-                        <p><a href="tel:+33759669691">07 59 66 96 91</a></p>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="contact-label">Email</span>
-                        <p><a href="mailto:lesdeuxaiguilles@gmail.com">lesdeuxaiguilles@gmail.com</a></p>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="contact-label">Horaires</span>
-                        <p>Mardi — Jeudi · 10h30 — 19h00<br>Vendredi · 10h00 — 17h00<br><span class="hours-note">Sur rendez-vous</span></p>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="contact-label">Suivez-nous</span>
-                        <p class="socials-inline">
-                            <a href="https://www.instagram.com/lesdeuxaiguilles/" target="_blank" rel="noopener">Instagram</a>
-                            <span> · </span>
-                            <a href="https://www.facebook.com/p/lesdeuxaiguilles-100090045909117/" target="_blank" rel="noopener">Facebook</a>
-                        </p>
-                    </div>
-                </div>
-
-                <form class="contact-form" onsubmit="event.preventDefault(); alert('Demo — le formulaire sera connecté en version finale.');">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Téléphone</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="project">Votre projet</label>
-                        <textarea id="project" name="project" rows="5" placeholder="Décrivez-nous votre idée, la taille, l'emplacement souhaité..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Envoyer ma demande</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-mark">✦</span>
-                    <span class="logo-text">Les Deux Aiguilles</span>
-                </div>
-                <p class="footer-tagline">Tatouage & Piercing — Saint-Dié-des-Vosges</p>
-                <div class="footer-socials">
-                    <a href="https://www.instagram.com/lesdeuxaiguilles/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-                    <span>·</span>
-                    <a href="https://www.facebook.com/p/lesdeuxaiguilles-100090045909117/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
-                </div>
-                <p class="footer-copy">© 2026 Les Deux Aiguilles. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js?v=v2"></script>
 </body>
 </html>
