@@ -50,3 +50,32 @@ document.querySelectorAll('.service-card, .value-item, .gallery-item, .section-h
     el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
     observer.observe(el);
 });
+
+// Lightbox galerie
+const lightbox = document.createElement('div');
+lightbox.className = 'lightbox';
+lightbox.innerHTML = '<button class="lightbox-close" aria-label="Fermer">×</button><img src="" alt="">';
+document.body.appendChild(lightbox);
+
+const lightboxImg = lightbox.querySelector('img');
+
+document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        lightboxImg.src = item.getAttribute('href');
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
